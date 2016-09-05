@@ -7,9 +7,9 @@ class NavigationBar extends React.Component {
 	render(){
 		return (
 			<div>
-				<ButtonNav section="home"/>
-				<ButtonNav section="aboutme"/>
-				<ButtonNav section="design"/>
+				<ButtonNav path="/" value="home"/>
+				<ButtonNav path="aboutme" value="about me"/>
+				<ButtonNav path="design" value= "design"/>
 			</div>
 		);
 	}

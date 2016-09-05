@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class ButtonNav extends React.Component {
 
 	render(){
-		let section = this.props.section
-		return <button>{section}</button>
+		return <Link to={this.props.path}><button>{this.props.value}</button></Link>
 	}
 }
 

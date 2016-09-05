@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Header has an input to change the welcome name
-class Header extends React.Component {
+class Header extends React.Component { 
 	constructor(){
 		super();
 		this.state = {
@@ -16,12 +16,12 @@ class Header extends React.Component {
 	}
 	render(){
 		let welcometxt = this.state.title
-		let name = this.state.name
 		let txt = this.state.txt
+		let name = this.state.name
 		return (
 			<div>
 				<h1>{welcometxt} {name}</h1>
-				<input type="text"
+				<input type="text" value={name}
 					onChange={this.changeName}/>
 				<p>{txt}</p>				
 			</div>
